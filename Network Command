@@ -4,6 +4,15 @@ SITE_2 # get system global
 
 SITE_2 # config system global
 
+SITE_1 (global) # get | grep http
+admin-http-connection-receive-timeout: 2            / Timeout para http aumentar para poder cargar backup
+admin-https-pki-required: disable
+admin-https-ssl-versions: tlsv1-1 tlsv1-2
+auth-http-port      : 1000
+auth-https-port     : 1003
+
+
+
 
 
 
