@@ -1,1 +1,18 @@
-get system interfaces   / Muestra IP de interfaces del fortinet
+get system interfaces      / Muestra IP de interfaces del fortinet
+config system interfaces   / Modo de configuracion de interfaces.
+    -Get                   / Muestra la configuracion mas detalladas. 
+    -Show                  / Muestra la configuracion menos detallada.
+    
+    #Configuracion de una interface por CLI
+   
+ FortiGate-VM64-KVM (interface) # edit port3                    / Entrar a la interface para configurarla.
+ FortiGate-VM64-KVM (port3) # set ip 10.0.2.254 255.255.255.0   / Configurar una IP a una interface.
+ FortiGate-VM64-KVM (port3) # set role lan                      / Definimos el Rol.
+ FortiGate-VM64-KVM (port3) # set alias LAN_SITE_2              / Descripccion del puerto.
+ FortiGate-VM64-KVM (port3) # end                               / Finalizar y guardar cambios.
+ 
+ 
+ 
+ 
+
+
