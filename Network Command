@@ -1,1 +1,9 @@
 FortiGate-VM64-KVM # execute ping 190.204.108.1
+
+SITE_2 # get system global
+
+SITE_2 # config system global
+
+
+
+
