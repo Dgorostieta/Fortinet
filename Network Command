@@ -11,7 +11,13 @@ admin-https-ssl-versions: tlsv1-1 tlsv1-2
 auth-http-port      : 1000
 auth-https-port     : 1003
 
+Entrar para verificar Address y Grupos
 
+SITE_2 # config firewall addrgrp
+SITE_2 (address)# show / get 
+
+SITE_2 # config firewall addrgrp
+SITE_2 (addrgrp)# show / get 
 
 
 
