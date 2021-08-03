@@ -1,7 +1,0 @@
-config      Configure object.
-get         Get dynamic and system information.
-show        Show configuration.
-diagnose    Diagnose facility.
-execute     Execute static commands.
-alias       Execute alias commands.
-exit        Exit the CLI.
