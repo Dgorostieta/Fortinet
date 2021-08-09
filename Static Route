@@ -1,1 +1,5 @@
 get router info routing-table all
+
+
+config system settings
+get | grep ecmp
