@@ -1,0 +1,55 @@
+get hardware status
+
+get system status
+
+get sys performance status >>>>>> (run it 3 times)
+
+diag sys top 1 80 >>>>>> (let it run 10 seconds and then press "q" to quit)
+
+fnsysctl ps -ef >>>>>> (run it 5 times)
+
+diag ip add list
+
+diag debug crashlog read
+
+diag debug config-error-log read
+
+
+
+get router info routing-table details 10.133.125.0
+
+get router info routing-table details
+
+get router info routing-table database
+
+get router info kernel
+
+
+
+get router info protocols
+
+
+
+get router info ospf status
+
+get router info ospf interface
+
+get router info ospf neighbor
+
+
+
+get router info routing-table ospf
+
+
+------------------------------------------
+get system arp
+
+execute ping <OSPF neighbor>
+
+diagnose sniffer packet any "proto 89" 4
+---------------------------------------
+diagnose ip router ospf all enable
+
+diagnose ip router ospf level info
+
+diagnose debug enable
