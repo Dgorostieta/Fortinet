@@ -5,3 +5,6 @@ config system settings
 get | grep ecmp 
 
 get router info routing-table all
+
+
+diagnose sniffer packet
