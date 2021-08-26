@@ -1,0 +1,7 @@
+execute dhcp lease-clear  Clear all DHCP leases.
+        {xxx.xxx.xxx.xxx}   Clear lease(s) on this IP address.
+        all   Clear all leases.
+        
+        
+execute dhcp lease-list  List all DHCP leases.
+        {interface}   List leases on this interface.
