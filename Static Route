@@ -1,5 +1,12 @@
+https://github.com/Dgorostieta/Fortinet/blob/main/Static%20Route
 get router info routing-table all
 
+config router static
+
+
+edit 1-......
+set dst 10.23.32.0/29 
+set device "VPN_Insurgentes"
 
 config system settings
 get | grep ecmp 
