@@ -1,1 +1,51 @@
+#Herramientas de diagnostico
+
+#Informacion del sistema
+get system status
+
+#Informacion de interfaces
+get hardware ?
+get hardware nic <interface_name>
+
+#ARP
+get system arp
+
+#Ping
+	#Preparar el ping
+	execute ping-options
+
+#Ejecutarlo
+execute ping
+
+#Sniffer
 diagnose sniffer packet [{any | <interface_name>} [{none | '<filter_str>'} [{1 | 2 | 3} [<packets_int>]]]]
+diagnose sniffer packet <interface> <filter> <nivel>
+
+#Debug Flow (varios pasos)
+	#Limpiar el Debugger
+	diagnose debug disable 
+	diagnose debug flow trace stop 
+	diagnose debug flow filter clear 
+	diagnose debug reset 
+
+	#Preparar el Debugger
+	#Estas son algunas de las opciones de filtros
+	diagnose debug flow filter addr x.x.x.x
+	diagnose debug flow filter saddr 10.0.1.10
+	diagnose debug flow filter daddr 172.30.3.124
+
+	#Opciones del Debug
+	diagnose debug flow trace start 50
+
+	#Encender/Apagar el debug
+	diagnose debug enable
+	diagnose debug disable
+
+#CPU y Memoria
+get system performance status
+diagnose sys top
+diagnose sys top-summary
+diagnose sys ?
+
+#Conserve Mode
+diagnose hardware sysinfo conserve
