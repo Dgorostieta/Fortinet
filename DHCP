@@ -5,3 +5,26 @@ execute dhcp lease-clear  Clear all DHCP leases.
         
 execute dhcp lease-list  List all DHCP leases.
         {interface}   List leases on this interface.
+
+
+Use the following command to clear the lease for the client with the IP address 192.168.1.5:
+# execute dhcp lease-clear 192.168.1.5
+
+Use the following command to clear the lease for the client with the IP address range:
+# execute dhcp lease-clear 192.168.1.5-192.168.1.200
+
+An excerpt shows that the 192.168.1.5 has disappeared from the 'InternalLAN'.
+
+ internalLAN
+IP            MAC-Address             Hostname        VCI             Expiry
+192.168.1.1   aa:aa:aa:aa:aa:aa       adminlaptop                     Sun Aug 11 20:56:01 2019
+To clear ALL leases - use with caution - use:
+
+# execute dhcp lease-clear all
+
+
+The following command will then return as blank or shorter list:
+# execute dhcp lease-list
+
+Note: This command set is valid for IPv4. For IPv6 use dhcp6. For example:
+# execute dhcp6 lease-list
